@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  mongodb:
+    image: amd64/mongo:3.6
+    platform: linux/amd64
+    container_name: pets-api-mongodb
+    hostname: mongodb
+    ports:
+      - 27017:27017
+
+volumes:
+  mongodb:
